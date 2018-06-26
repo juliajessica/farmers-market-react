@@ -23,7 +23,7 @@ function SeasonalProduce(){
     <div>
       <h1>Seasonal Produce</h1>
       <hr/>
-
+      <SeasonalProduceList />
     </div>
   );
 }

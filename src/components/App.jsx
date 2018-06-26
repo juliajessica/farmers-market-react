@@ -16,6 +16,15 @@ function App(){
         <Route path='/seasonalproduce' component={SeasonalProduce} />
         <Route path='/marketschedule' component={MarketSchedule} />
       </Switch>
+
+      <style jsx global>{`
+        body {
+          margin: 0;
+          padding: 0;
+        }
+      `}</style>
+
+
     </div>
   );
 }
