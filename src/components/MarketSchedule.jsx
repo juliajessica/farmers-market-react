@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ticket(props){
+function MarketSchedule(props){
   return(
     <div>
       <style jsx>{`
@@ -17,10 +17,10 @@ function Ticket(props){
   );
 }
 
-Ticket.propTypes = {
+MarketSchedule.propTypes = {
   names: PropTypes.string,
   location: PropTypes.string,
   issue: PropTypes.string
 };
 
-export default Ticket;
+export default MarketSchedule;

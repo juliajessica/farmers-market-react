@@ -1,15 +1,16 @@
 import React from 'react';
+import SeasonalProduce from './SeasonalProduce';
+import MarketSchedule from './MarketSchedule'
 
-function Header(){
-  let headerStyles = {
-    fontWeight: 'bold',
-    fontFamily: 'monospace',
-    fontSize: '28px'
-  };
+function Nav(){
 
   return(
-    <div style={headerStyles} className="green-text">
-      <h1>Help Queue</h1>
+    <div className="green-text">
+      <h1>Mora Mora Farm</h1>
+
+      <SeasonalProduce />
+      <MarketSchedule />
+
 
       <style jsx>{`
         .green-text {
@@ -25,4 +26,4 @@ function Header(){
   );
 }
 
-export default Header;
+export default Nav;
