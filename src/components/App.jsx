@@ -14,7 +14,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/seasonalproducelist' component={SeasonalProduceList} />
-        <Route path='/marketschedule' component={MarketScheduleList} />
+        <Route path='/marketschedulelist' component={MarketScheduleList} />
       </Switch>
 
       <style jsx global>{`

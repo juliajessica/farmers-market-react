@@ -8,13 +8,13 @@ function SeasonalProduceList(){
       <h1>Seasonal Produce</h1>
       <hr/>
       <div className='flexItems'>
-      {availableProduce.map((produce, index) =>
-        <SeasonalProduce
-          month={produce.month}
-          selection={produce.selection}
-          key={index}/>
-      )}
-    </div>
+        {availableProduce.map((produce, index) =>
+          <SeasonalProduce
+            month={produce.month}
+            selection={produce.selection}
+            key={index}/>
+        )}
+      </div>
       <style jsx>{`
         h1 {
           font-size: 4rem;

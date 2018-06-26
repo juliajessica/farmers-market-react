@@ -3,8 +3,19 @@ import PropTypes from 'prop-types';
 
 function MarketSchedule(props){
   return(
-    <div>
-      <p></p>
+    <div className="marketSchedule">
+      <p>{props.day}</p>
+      <p>{props.location}</p>
+      <p>{props.hours}</p>
+      <p>{props.booth}</p>
+
+      <style jsx>{`
+        .marketSchedule{
+          margin: 2rem;  
+        }
+
+        `}
+      </style>
     </div>
   );
 }
