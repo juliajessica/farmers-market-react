@@ -3,6 +3,7 @@ import React from 'react';
 function Home(){
   return(
     <div className="bg-img">
+      <h3>grown organic, grown with love</h3>
 
 
       <style jsx>{`
@@ -12,6 +13,16 @@ function Home(){
           background-size: cover;
           width: 100%;
           height: 700px;
+        }
+
+        h3 {
+          position: absolute;
+          top: 30rem;
+          left: .4em;
+          z-index: 1;
+          color: white;
+          font-size:4rem;
+          font-family: 'Prata', serif;
         }
       `}</style>
     </div>

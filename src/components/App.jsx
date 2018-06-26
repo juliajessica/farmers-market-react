@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Nav from './Nav';
 import Home from './Home';
-import SeasonalProduce from './SeasonalProduce';
+import SeasonalProduceList from './SeasonalProduceList';
 import MarketSchedule from './MarketSchedule';
 
 
@@ -13,7 +13,7 @@ function App(){
       <Nav />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/seasonalproduce' component={SeasonalProduce} />
+        <Route path='/seasonalproducelist' component={SeasonalProduceList} />
         <Route path='/marketschedule' component={MarketSchedule} />
       </Switch>
 

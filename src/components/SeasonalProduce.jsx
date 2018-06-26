@@ -1,32 +1,45 @@
 import React from 'react';
-//
-// let masterTicketList = [
-//   {
-//     names: 'Thato and Haley',
-//     location: '3A',
-//     issue: 'Firebase won\'t save record. Halp.'
-//   },
-//   {
-//     names: 'Sleater and Kinney',
-//     location: '4B',
-//     issue: 'Fox image not displaying on page, can only see duck?'
-//   },
-//   {
-//     names: 'Iani & Jacob',
-//     location: '9F',
-//     issue: 'Donkey picture not displaying on hover in Zoology app. :('
-//   }
-// ];
+import PropTypes from 'prop-types';
 
-function SeasonalProduce(){
+
+function SeasonalProduce(props){
   return (
-    <div>
-      <h1>Seasonal Produce</h1>
-      <hr/>
-      <SeasonalProduceList />
+    <div className="seasonalProduce">
+      <p>{props.month}</p>
+      <ul>
+        {props.selection.map((item, index) =>
+          <li key={index}>{item}</li>
+        )}
+      </ul>
+
+      <style jsx>{`
+        .seasonalProduce {
+          margin: 2rem;
+          border: 1px solid black;
+          padding: 1rem;
+          align-items:center;
+        }
+        p {
+          text-align:center;
+          color: #967d54;
+          font-size: 2.5rem;
+        }
+        li {
+          list-style-type: none;
+          font-size: 1.3rem;
+        }
+      `}</style>
     </div>
+
   );
 }
+
+
+SeasonalProduce.propTypes = {
+  month: PropTypes.string.isRequired,
+  selection: PropTypes.array.isRequired
+};
+
 
 export default SeasonalProduce;
 
