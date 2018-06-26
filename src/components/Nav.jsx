@@ -9,7 +9,7 @@ function Nav(){
       <div className="nav">
         <h2>
           <Link to="/"
-            style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Home</Link><Link to="/seasonalproducelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Seasonal Produce</Link><Link to="/marketschedule" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Market Schedule</Link>
+            style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Home</Link><Link to="/seasonalproducelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Seasonal Produce</Link><Link to="/marketschedulelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Market Schedule</Link>
         </h2>
 
 

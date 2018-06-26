@@ -1,19 +1,19 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-function MarketSchedule(){
+function MarketSchedule(props){
   return(
     <div>
-      <h1>Market Schedule</h1>
-      <style jsx>{`
-        div {
-
-        }
-      `}</style>
-
+      <p></p>
     </div>
   );
 }
 
+MarketSchedule.propTypes = {
+  day: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  hours: PropTypes.string.isRequired,
+  booth: PropTypes.string.isRequired
+};
 
 export default MarketSchedule;

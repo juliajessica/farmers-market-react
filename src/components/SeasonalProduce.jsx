@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 function SeasonalProduce(props){
   return (
     <div className="seasonalProduce">

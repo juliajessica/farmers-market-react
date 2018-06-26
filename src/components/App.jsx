@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
 import SeasonalProduceList from './SeasonalProduceList';
-import MarketSchedule from './MarketSchedule';
+import MarketScheduleList from './MarketScheduleList';
 
 
 function App(){
@@ -14,7 +14,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/seasonalproducelist' component={SeasonalProduceList} />
-        <Route path='/marketschedule' component={MarketSchedule} />
+        <Route path='/marketschedule' component={MarketScheduleList} />
       </Switch>
 
       <style jsx global>{`
