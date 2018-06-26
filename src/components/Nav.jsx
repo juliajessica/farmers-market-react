@@ -1,22 +1,22 @@
 import React from 'react';
-import SeasonalProduce from './SeasonalProduce';
-import MarketSchedule from './MarketSchedule';
+import { Link } from 'react-router-dom';
+// import SeasonalProduce from './SeasonalProduce';
+// import MarketSchedule from './MarketSchedule';
+
 
 function Nav(){
 
   return(
-    <div className="green-text">
+    <div>
       <h1>Mora Mora Farm</h1>
-
-      <SeasonalProduce />
-      <MarketSchedule />
+      <Link to="/">Home</Link> | <Link to="/seasonalproduce">Seasonal Produce</Link> | <Link to="/marketschedule">Market Schedule</Link>
 
 
       <style jsx>{`
-        .green-text {
+        h1 {
           color: green;
         }
-        .green-text:hover {
+        h1:hover {
           color: black;
           opacity: 0.5;
         }

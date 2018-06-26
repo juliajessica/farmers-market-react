@@ -1,26 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function MarketSchedule(props){
   return(
     <div>
+      <h1>Market Schedule</h1>
       <style jsx>{`
         div {
-          background-color: grey;
+          
         }
       `}</style>
 
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
-      <hr/>
     </div>
   );
 }
 
-MarketSchedule.propTypes = {
-  names: PropTypes.string,
-  location: PropTypes.string,
-  issue: PropTypes.string
-};
 
 export default MarketSchedule;

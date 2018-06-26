@@ -1,7 +1,11 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
 import Nav from './Nav';
 import Home from './Home';
-import { Switch, Route } from 'react-router-dom';
+import SeasonalProduce from './SeasonalProduce';
+import MarketSchedule from './MarketSchedule';
+
 
 function App(){
   return (

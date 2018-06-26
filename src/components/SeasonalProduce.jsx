@@ -21,6 +21,7 @@ import React from 'react';
 function SeasonalProduce(){
   return (
     <div>
+      <h1>Seasonal Produce</h1>
       <hr/>
 
     </div>
