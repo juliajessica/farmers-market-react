@@ -1,6 +1,6 @@
 import React from 'react';
 import SeasonalProduce from './SeasonalProduce';
-import MarketSchedule from './MarketSchedule'
+import MarketSchedule from './MarketSchedule';
 
 function Nav(){
 
@@ -17,7 +17,7 @@ function Nav(){
           color: green;
         }
         .green-text:hover {
-          background-color: pink;
+          color: black;
           opacity: 0.5;
         }
       `}</style>
