@@ -30,8 +30,6 @@ function SeasonalProduceList(){
     </div>
 
   );
-
-
 }
 
 export default SeasonalProduceList;

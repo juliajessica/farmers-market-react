@@ -4,15 +4,24 @@ import PropTypes from 'prop-types';
 function MarketSchedule(props){
   return(
     <div className="marketSchedule">
-      <p>{props.day}</p>
+      <p className="day">{props.day}</p>
       <p>{props.location}</p>
       <p>{props.hours}</p>
       <p>{props.booth}</p>
 
       <style jsx>{`
+
         .marketSchedule{
-          margin: 2rem;  
+          margin: 2rem;
         }
+
+        .day {
+          text-align:center;
+          color: #967d54;
+          font-size: 2.5rem;
+        }
+
+
 
         `}
       </style>
