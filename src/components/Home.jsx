@@ -9,6 +9,7 @@ function Home(){
       <p>learn more</p>
 
       <style jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Prata');
         .bg-img {
           background-image: url('https://images.unsplash.com/photo-1504945005722-33670dcaf685?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b23b9e5ab26314eb5d94786014f589e&auto=format&fit=crop&w=634&q=80');
           background-repeat: no-repeat;

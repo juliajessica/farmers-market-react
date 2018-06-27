@@ -3,7 +3,6 @@ import marketSchedule from './ScheduleData';
 import MarketSchedule from './MarketSchedule';
 import bannerImg from '../assets/img/harvest.jpeg';
 
-
 function MarketScheduleList(){
   return(
     <div>
