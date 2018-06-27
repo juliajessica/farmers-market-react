@@ -17,7 +17,7 @@ function Nav(){
         @import url('https://fonts.googleapis.com/css?family=Prata');
         .logo {
           display: block;
-          height: 140px;
+          height: 100px;
           width: auto;
           margin: auto;
         }

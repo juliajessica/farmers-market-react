@@ -1,21 +1,13 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 
 import Nav from './Nav';
-import Home from './Home';
-import SeasonalProduceList from './SeasonalProduceList';
-import MarketScheduleList from './MarketScheduleList';
-
+import Router from './Router'
 
 function App(){
   return (
     <div>
       <Nav />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/seasonalproducelist' component={SeasonalProduceList} />
-        <Route path='/marketschedulelist' component={MarketScheduleList} />
-      </Switch>
+      <Router />
 
       <style jsx global>{`
         body {
