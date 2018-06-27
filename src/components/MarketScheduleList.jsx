@@ -25,6 +25,7 @@ function MarketScheduleList(){
           font-size: 4rem;
           color: #aa98aa;
           margin: 1rem;
+          text
         }
         img {
 
@@ -34,8 +35,8 @@ function MarketScheduleList(){
         }
         .grid-items {
           display: grid;
-          grid-gap: .7rem;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: .8rem;
+          grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         }
       `}</style>
 

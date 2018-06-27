@@ -5,9 +5,9 @@ function MarketSchedule(props){
   return(
     <div className="marketSchedule">
       <p className="day">{props.day}</p>
-      <p>{props.location}</p>
-      <p>{props.hours}</p>
-      <p>{props.booth}</p>
+      <p><strong>Location:</strong> {props.location}</p>
+      <p><strong>Hours:</strong> {props.hours}</p>
+      <p><strong>Booth:</strong> {props.booth}</p>
 
       <style jsx>{`
 

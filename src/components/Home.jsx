@@ -4,7 +4,8 @@ function Home(){
   return(
     <div className="bg-img">
       <h3>grown organic, grown with love</h3>
-
+      <h5>welcome to Mora Mora farm</h5>
+      <p>learn more</p>
 
       <style jsx>{`
         .bg-img {
@@ -22,6 +23,31 @@ function Home(){
           z-index: 1;
           color: white;
           font-size:4rem;
+          font-family: 'Prata', serif;
+        }
+
+        h5 {
+          position: absolute;
+          top: 40rem;
+          left: 16em;
+          z-index: 1;
+          color: white;
+          font-size:.9rem;
+          font-family: 'Prata', serif;
+        }
+
+        p {
+          position: absolute;
+          top: 45rem;
+          left: 18em;
+          z-index: 1;
+          color: #d6b12c;
+          border:1px solid #d6b12c;
+          padding: 1em;
+          padding-left: 3em;
+          padding-right: 3em;
+
+          font-size:.9rem;
           font-family: 'Prata', serif;
         }
       `}</style>
