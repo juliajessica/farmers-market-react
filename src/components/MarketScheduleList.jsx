@@ -9,7 +9,7 @@ function MarketScheduleList(){
       <h1>Market Schedule</h1>
       <div className="marketScheduleList">
         <hr/>
-        <img src="./img/harvest.jpeg" />
+        <img src="/img/harvest.jpeg" />
         <div className="grid-items">
           {marketSchedule.map((date, index) =>
             <MarketSchedule
