@@ -4,16 +4,18 @@ import SeasonalProduce from './SeasonalProduce';
 
 function SeasonalProduceList(){
   return(
-    <div className="seasonalProduceList">
-      <h1>Seasonal Produce</h1>
-      <hr/>
-      <div className='flexItems'>
-        {availableProduce.map((produce, index) =>
-          <SeasonalProduce
-            month={produce.month}
-            selection={produce.selection}
-            key={index}/>
-        )}
+    <div>
+      <div className="seasonalProduceList">
+        <h1>Seasonal Produce</h1>
+        <hr/>
+        <div className='flexItems'>
+          {availableProduce.map((produce, index) =>
+            <SeasonalProduce
+              month={produce.month}
+              selection={produce.selection}
+              key={index}/>
+          )}
+        </div>
       </div>
       <style jsx>{`
         h1 {
@@ -23,9 +25,9 @@ function SeasonalProduceList(){
         }
         .flexItems {
           display: grid;
-          grid-gap: .7rem;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
+
       `}</style>
     </div>
 

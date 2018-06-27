@@ -26,6 +26,8 @@ function SeasonalProduce(props){
         li {
           list-style-type: none;
           font-size: 1.3rem;
+          align-items: center;
+          line-height: 2rem;
         }
       `}</style>
     </div>

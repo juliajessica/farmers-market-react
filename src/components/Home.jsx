@@ -3,7 +3,8 @@ import React from 'react';
 function Home(){
   return(
     <div className="bg-img">
-      <h3>grown organic, grown with love</h3>
+      <h3>grown organic,</h3>
+      <h3>grown with love</h3>
       <h5>welcome to Mora Mora farm</h5>
       <p>learn more</p>
 
@@ -16,10 +17,20 @@ function Home(){
           height: 700px;
         }
 
-        h3 {
+        h3:nth-child(1) {
           position: absolute;
-          top: 30rem;
+          top: 19rem;
           left: .4em;
+          z-index: 1;
+          color: white;
+          font-size:4rem;
+          font-family: 'Prata', serif;
+        }
+
+        h3:nth-child(2) {
+          position: absolute;
+          top: 23rem;
+          left: .78em;
           z-index: 1;
           color: white;
           font-size:4rem;
@@ -28,7 +39,7 @@ function Home(){
 
         h5 {
           position: absolute;
-          top: 40rem;
+          top: 35rem;
           left: 16em;
           z-index: 1;
           color: white;
@@ -38,15 +49,14 @@ function Home(){
 
         p {
           position: absolute;
-          top: 45rem;
-          left: 18em;
+          top: 38rem;
+          left: 15em;
           z-index: 1;
           color: #d6b12c;
           border:1px solid #d6b12c;
           padding: 1em;
-          padding-left: 3em;
-          padding-right: 3em;
-
+          padding-left: 5em;
+          padding-right: 5em;
           font-size:.9rem;
           font-family: 'Prata', serif;
         }

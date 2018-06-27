@@ -5,30 +5,34 @@ import MarketSchedule from './MarketSchedule';
 
 function MarketScheduleList(){
   return(
-    <div className="marketScheduleList">
+    <div>
       <h1>Market Schedule</h1>
-      <hr/>
-      <img src="https://images.unsplash.com/photo-1504283846145-580314790011?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3aa5fdc890faba58f005e28b51f4e349&auto=format&fit=crop&w=800&q=60" />
-      <div className="grid-items">
-        {marketSchedule.map((date, index) =>
-          <MarketSchedule
-            day={date.day}
-            location={date.location}
-            hours={date.hours}
-            booth={date.booth}
-            key={index}/>
-        )}
-    </div>
+      <div className="marketScheduleList">
+        <hr/>
+        <img src="./img/harvest.jpeg" />
+        <div className="grid-items">
+          {marketSchedule.map((date, index) =>
+            <MarketSchedule
+              day={date.day}
+              location={date.location}
+              hours={date.hours}
+              booth={date.booth}
+              key={index}/>
+          )}
+        </div>
+      </div>
 
       <style jsx>{`
         h1 {
           font-size: 4rem;
           color: #aa98aa;
           margin: 1rem;
-          text
         }
         img {
-
+          display:block;
+          width:100%;
+          height:auto;
+          margin:auto;
         }
         .marketScheduleList {
           margin:2rem;

@@ -5,41 +5,43 @@ function Nav(){
 
   return(
     <div>
-      <h1>Mora Mora Farm</h1>
+      <img src="./img/logo.png" className="logo"/>
       <div className="nav">
-        <h2>
-          <Link to="/"
-            style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Home</Link><Link to="/seasonalproducelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Seasonal Produce</Link><Link to="/marketschedulelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem' }}>Market Schedule</Link>
-        </h2>
-
-
+        <h4><Link to="/" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem', padding: '.7rem'}}>Home</Link></h4>
+        <h4><Link to="/seasonalproducelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem', padding: '.7rem' }}>Seasonal Produce</Link></h4>
+        <h4><Link to="/marketschedulelist" style={{ textDecoration: 'none', color: 'black', fontSize: '1.2rem', padding: '.7rem'}}>Market Schedule</Link></h4>
       </div>
 
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css?family=Prata');
-
+        .logo {
+          display: block;
+          height: 140px;
+          width: auto;
+          margin: auto;
+        }
         h1 {
           text-align: center;
           color: #416033;
+          font-size: 3em;
         }
 
         .nav {
           padding: .7rem;
-          margin: .3rem;
           text-transform: uppercase;
-        }
-        h2 {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
-          padding: 2rem;
+          border: 1px solid black;
+          margin: .4rem;
+        }
+        h4 {
           text-decoration: none;
           color: black;
-          border: 1px solid black;
         }
-        a:hover {
-          color:#d7dbe2;
+        a.h4:hover {
+          color:#d6b12c;
         }
       `}</style>
     </div>
