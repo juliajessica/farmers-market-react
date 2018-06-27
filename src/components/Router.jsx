@@ -5,10 +5,10 @@ import Home from './Home';
 import SeasonalProduceList from './SeasonalProduceList';
 import MarketScheduleList from './MarketScheduleList';
 
-function(){
+function Router(){
   return(
     <div>
-    <Switch>
+      <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/seasonalproducelist' component={SeasonalProduceList} />
         <Route path='/marketschedulelist' component={MarketScheduleList} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import marketSchedule from './ScheduleData';
 import MarketSchedule from './MarketSchedule';
+import bannerImg from '../assets/img/harvest.jpeg';
 
 
 function MarketScheduleList(){
@@ -9,7 +10,7 @@ function MarketScheduleList(){
       <h1>Market Schedule</h1>
       <div className="marketScheduleList">
         <hr/>
-        <img src="/img/harvest.jpeg" />
+        <img src={bannerImg} />
         <div className="grid-items">
           {marketSchedule.map((date, index) =>
             <MarketSchedule
