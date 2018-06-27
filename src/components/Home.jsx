@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home(){
   return(
@@ -6,7 +7,7 @@ function Home(){
       <h3>grown organic,</h3>
       <h3>grown with love</h3>
       <h5>welcome to Mora Mora farm</h5>
-      <p>learn more</p>
+      <Link to="/about"><p>learn more</p></Link>
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css?family=Prata');
@@ -51,15 +52,19 @@ function Home(){
         p {
           position: absolute;
           top: 38rem;
-          left: 15em;
+          left: 10em;
           z-index: 1;
           color: #d6b12c;
           border:1px solid #d6b12c;
           padding: 1em;
-          padding-left: 5em;
-          padding-right: 5em;
+          padding-left: 7em;
+          padding-right: 7em;
           font-size:.9rem;
           font-family: 'Prata', serif;
+        }
+        p:hover{
+          color: white;
+          border:1px solid white;
         }
       `}</style>
     </div>
