@@ -9,6 +9,7 @@ function MarketScheduleList(){
       <h1>Market Schedule</h1>
       <div className="marketScheduleList">
         <hr/>
+        <p className="imgText">grow</p>
         <img src={bannerImg} />
         <div className="grid-items">
           {marketSchedule.map((date, index) =>
@@ -41,6 +42,13 @@ function MarketScheduleList(){
           display: grid;
           grid-gap: .8rem;
           grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        }
+        .imgText {
+          postion: absolute;
+          top: 20rem;
+          left: 6rem;
+          z-index: 1;
+          color:#d6b12c;
         }
       `}</style>
 
