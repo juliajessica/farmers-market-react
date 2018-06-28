@@ -13,6 +13,13 @@
 
 _This is a template repository with the added technologies to build a React Application quicker for projects_
 
+## Screenshots of Application
+
+
+| Homepage in web browser | Market page on mobile |
+| :--------- | :--------- |
+|![Screenshot of homepage](src/assets/img/home.png) |  ![screenshot of secondary page](src/assets/img/mobile.png) |
+
 ## <span style="color:#74875d;">Technologies Used</span>
 
 * HTML
