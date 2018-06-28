@@ -17,6 +17,7 @@ function SeasonalProduce(props){
           border: 1px solid black;
           padding: 1rem;
           align-items:center;
+          background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
         }
         p {
           text-align:center;
@@ -29,6 +30,7 @@ function SeasonalProduce(props){
           align-items: center;
           line-height: 2rem;
         }
+
       `}</style>
     </div>
 

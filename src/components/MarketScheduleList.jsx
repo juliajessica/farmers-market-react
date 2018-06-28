@@ -10,6 +10,7 @@ function MarketScheduleList(){
       <div className="marketScheduleList">
         <hr/>
         <p className="imgText">grow</p>
+        <p>slowly, slowly</p>
         <img src={bannerImg} />
         <div className="grid-items">
           {marketSchedule.map((date, index) =>
@@ -24,6 +25,9 @@ function MarketScheduleList(){
       </div>
 
       <style jsx>{`
+        .marketScheduleList {
+          margin:4rem;
+        }
         h1 {
           font-size: 4rem;
           color: #aa98aa;
@@ -35,20 +39,41 @@ function MarketScheduleList(){
           height:auto;
           margin:auto;
         }
-        .marketScheduleList {
-          margin:2rem;
-        }
         .grid-items {
           display: grid;
           grid-gap: .8rem;
           grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         }
         .imgText {
-          postion: absolute;
-          top: 20rem;
-          left: 6rem;
+          position: absolute;
+          top: 24rem;
+          left: 1rem;
           z-index: 1;
           color:#d6b12c;
+          font-size: 9rem;
+        }
+        p{
+          position: absolute;
+          top: 40rem;
+          left: 1.5rem;
+          z-index: 1;
+          color:#d6b12c;
+          font-size: 3rem;
+        }
+        @media (max-width:550px){
+          .marketScheduleList {
+            margin:.3rem;
+          }
+          .imgText {
+            top: 24rem;
+            left: 1rem;
+            font-size: 7rem;
+          }
+          p{
+            top: 37rem;
+            left: 1.5rem;
+            font-size: 2rem;
+          }
         }
       `}</style>
 
