@@ -18,7 +18,7 @@ _This is a template repository with the added technologies to build a React Appl
 * HTML
 * React
 * JSX
-* Webpack, Eslint, babel
+* Webpack, Eslint, Babel
 * React Hot Loader
 * CSS Loader, CSS Style Loader, and JSX Loader
 
